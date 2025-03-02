@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>6-Month Coding Journey</h1>
+            <div class="deadline-counter">
+                Days Left: <span id="days">180</span>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <main class="grid-container">
+            <!-- Resources Section -->
+            <section class="card resources" data-category="dsa">
+                <h2><i class="fas fa-code"></i> DSA & Coding</h2>
+                <div class="links" id="dsa-links"></div>
+            </section>
+
+            <section class="card resources" data-category="fullstack">
+                <h2><i class="fas fa-layer-group"></i> Full-Stack</h2>
+                <div class="links" id="fullstack-links"></div>
+            </section>
+
+            <!-- Add these sections inside the <main class="grid-container"> -->
+            <section class="card resources" data-category="practice">
+                <h2><i class="fas fa-running"></i> Practice Platforms</h2>
+                <div class="links" id="practice-links"></div>
+            </section>
+
+            <section class="card resources" data-category="additional">
+                <h2><i class="fas fa-tools"></i> Additional Resources</h2>
+                <div class="links" id="additional-links"></div>
+            </section>
+
+            <!-- Deadlines Section -->
+            <section class="card deadlines">
+                <h2><i class="fas fa-calendar-alt"></i> Monthly Goals</h2>
+                <ul id="deadline-list"></ul>
+            </section>
+
+            <!-- Notes Section -->
+            <section class="card notes">
+                <h2><i class="fas fa-comment"></i> Daily Notes</h2>
+                <textarea id="note-input" placeholder="Write your daily focus..."></textarea>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
